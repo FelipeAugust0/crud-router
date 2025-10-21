@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// Import "./Login.css"
+import "./Login.css"
 
 function Login({ onLogin }) {  // <-- adiciona aqui
   const [userName, setUserName] = useState("");
@@ -11,8 +11,8 @@ function Login({ onLogin }) {  // <-- adiciona aqui
   }
 
   return (
-    <div>
-        <form onSubmit={randomSubmit}>
+    <div className="login-container">
+        <form className="login-form" onSubmit={randomSubmit}>
             <h2>Agenda de Contatos</h2>
             <p>Faça login para continuar</p>
             <input 
